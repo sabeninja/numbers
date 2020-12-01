@@ -1,16 +1,16 @@
 #! /bin/bash
 #numbers.sh
 #Shuntaro Steven Abe
-read -pr 'Enter a number: ' number
-test=1
-remainder=$("$number"%2)
-while [ $test -lt "$number" ]
+echo "Enter a positive number: "
+read number
+test=$0
+while [ $test != number + 1 ]
 do
-	if [ "$remainder" = 0 ]:
+	if $(($test%2)) -eq 0 = True
 	then
-		echo $test Even
+		echo "$test Even"
 	else
-		echo $test Odd
+		echo "$test Odd"
 	fi
-	remainder=("$remainder"+1)
+	test=$((test+1))
 done
