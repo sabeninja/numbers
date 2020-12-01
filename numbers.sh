@@ -2,11 +2,11 @@
 #numbers.sh
 #Shuntaro Steven Abe
 echo "Enter a positive number: "
-read number
-test=$0
-while $test != "$number" + 1
+read -r number
+test=1
+while [ "$test" -le "$number" ]
 do
-	if $(("test"%2)) -eq 0 = True
+	if [ $((test%2)) -eq 0 ]
 	then
 		echo "$test Even"
 	else
