@@ -4,7 +4,7 @@
 echo "Enter a positive number: "
 read number
 test=$0
-while $test != $number + 1
+while $test != "$number" + 1
 do
 	if $((test%2)) -eq 0 = True
 	then
